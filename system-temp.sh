@@ -57,6 +57,6 @@ if [[ $hddhigh -gt $hddmax ]]
 then
     # echo and send the whole message so we can see all CPU temperatures, not just the highest
     # echo "$message" 
-    echo "$message" | mail -s "HDD Temperature Alarm" malcolmchalmers@hotmail.com
+    echo "$message" | mail -s "HDD Temperature Alarm" $emailto 
 fi
 
